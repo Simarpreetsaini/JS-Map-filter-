@@ -1,20 +1,22 @@
-# Student Records Directory
+# Student Records
 
-A dynamic web application built with HTML, CSS, and vanilla JavaScript that renders student cards from an array of objects and provides real-time filtering by name.
+## About
 
-## Features
+I made this project using HTML, CSS and JavaScript.
 
-- **Dynamic Rendering**: Displays student attributes (`name`, `marks`, `class`, `address`) dynamically as UI cards.
-- **Real-Time Filtering**: Uses JavaScript's `Array.prototype.filter()` method to filter student cards instantly as the user types in the search box.
-- **Responsive Layout**: Designed using CSS Grid to adjust cleanly across different device screen sizes.
+The project shows student details in cards. I also added a search box so I can search students by their name.
 
-## Project Structure
+## What I Learned
 
-- `index.html` - Contains the input search bar, container markup, and styling.
-- `script.js` - Contains student data objects, rendering logic, and search event handling.
+- How to store data in an array of objects.
+- How to use a loop to display data.
+- How to use filter() for searching.
+- How to update the page using JavaScript.
+
+## Challenges
+
+At first I didn't know how to search the student names. After using filter() and testing different names, I understood how it works.
 
 ## How to Run
 
-1. Download or clone the repository.
-2. Open `index.html` in any browser.
-3. Type a name in the search bar to filter student cards dynamically.
+Open index.html in your browser.
