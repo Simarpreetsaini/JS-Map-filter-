@@ -4,22 +4,21 @@
 
 I made this project using HTML, CSS and JavaScript.
 
-The project shows student details in cards. I also added a search box so I can search students by their name.
+The project displays student details in cards and includes a search box to find students by name.
 
 ## What I Learned
 
 * How to store data in an array of objects.
-* How to use `map()` to display student data in cards.
+* How to use `map()` to transform student data into HTML cards.
 * How to use `filter()` to search students by name.
 * How to update the page using JavaScript.
-* How to work with array methods instead of traditional `for` loops.
 
-## Challenges
+## `map()` Improvement
 
-At first I didn't know how to search the student names. After using `filter()` and testing different names, I understood how it works.
+At first, I used `map()` only to add cards to the page, which was a side effect.
 
-I also learned how to use `map()` to render the student information dynamically as cards.
+I changed it so `map()` now returns an HTML card for each student. The cards are then combined using `join()` and added to the page.
 
 ## How to Run
 
-Open `index.html` in your browser.
+Open `index.html` in a browser.
