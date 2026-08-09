@@ -1,22 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Records</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Student Directory</h1>
-        
-        <div class="search-container">
-            <input type="text" id="searchInput" class="search-input" placeholder="Search student by name...">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Filter Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <div id="cardsContainer" class="cards-grid"></div>
+  <body>
+    <div class="container">
+      <header>
+        <p>Hi, Username</p>
+        <button id="loginButton">Login</button>
+      </header>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search student..." />
+
+        <button id="searchButton">Search</button>
+      </div>
+
+      <div id="cardsContainer" class="cards-grid"></div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
