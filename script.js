@@ -1,4 +1,4 @@
-let students = [
+const students = [
   {
     name: "John Doe",
     marks: 85,
@@ -31,35 +31,31 @@ let students = [
   },
 ];
 
-let cardsContainer = document.getElementById("cardsContainer");
-let searchInput = document.getElementById("searchInput");
+const cardsContainer = document.getElementById("cardsContainer");
+const searchInput = document.getElementById("searchInput");
 
 function renderStudents(studentList) {
-  cardsContainer.innerHTML = "";
-
-  studentList.map((student) => {
-    let card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-      <h2>${student.name}</h2>
-      <p><strong>Marks:</strong> ${student.marks}</p>
-      <p><strong>Class:</strong> ${student.class}</p>
-      <p><strong>Address:</strong> ${student.address}</p>
+  const cards = studentList.map((student) => {
+    return `
+      <div class="card">
+        <h2>${student.name}</h2>
+        <p><strong>Marks:</strong> ${student.marks}</p>
+        <p><strong>Class:</strong> ${student.class}</p>
+        <p><strong>Address:</strong> ${student.address}</p>
+      </div>
     `;
-
-    cardsContainer.appendChild(card);
   });
+  cardsContainer.innerHTML = cards.join("");
 }
 
 function filterStudents() {
-  let query = searchInput.value.toLowerCase();
+  const query = searchInput.value.trim().toLowerCase();
 
-  let filtered = students.filter((student) =>
-    student.name.toLowerCase().includes(query),
+  const filteredStudents = students.filter((student) =>
+    student.name.toLowerCase().includes(query)
   );
 
-  renderStudents(filtered);
+  renderStudents(filteredStudents);
 }
 
 searchInput.addEventListener("input", filterStudents);
