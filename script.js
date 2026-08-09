@@ -52,12 +52,18 @@ function filterStudents() {
   const query = searchInput.value.trim().toLowerCase();
 
   const filteredStudents = students.filter((student) =>
-    student.name.toLowerCase().includes(query)
+    student.name.toLowerCase().includes(query),
   );
 
   renderStudents(filteredStudents);
 }
 
 searchInput.addEventListener("input", filterStudents);
+document
+  .getElementById("searchButton")
+  .addEventListener("click", filterStudents);
+document.getElementById("loginButton").addEventListener("click", function () {
+  alert("Login button clicked");
+});
 
 renderStudents(students);
